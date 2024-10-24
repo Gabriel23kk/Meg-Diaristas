@@ -126,5 +126,20 @@ main::before {
     background: transparent;
     border: 2px solid #fc91a3;
 }
+.logo2{
+    animation: limpa 2s ease-in infinite;
+}
+
+@keyframes limpa {
+    0%{
+        transform: translate(1rem, 1rem);
+    }
+    50%{
+        transform: translate(1.3rem, 1.3rem);
+    }
+    100%{
+        transform: translate(1rem, 1rem);
+    }
+}
 
 

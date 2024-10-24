@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    gap: 8rem;
+    padding: 1px;
+    height: 20vh;
+    
+}
+.logo{
+    position: relative;
+    top: -1rem;
+    width: 50vw;
+    height: 25vh;
+
+}
+.menu{
+    position: relative;
+    top: 2rem;
+}
+div{
+    padding-left: 2rem; 
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+ul li a{
+    text-decoration: none;
+    color: #f74cf7;
+    font-size: 20px;
+    cursor: pointer;
+}
+.box-open{ 
+    height: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.box-open.open{
+    height: auto;
+    animation: open 0.5s forwards;
+    opacity: 1;
+}
+@keyframes open {
+    from{
+        height: 0;
+        opacity: 0;
+        
+    }
+    to{
+        height: 200px;
+        opacity: 1;
+    }
+}

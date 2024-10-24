@@ -1,51 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
 }
 
 header{
-    display: flex;
-    gap: 8rem;
-    padding: 1px;
-    height: 20vh;
-    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
-.logo{
-    position: relative;
-    top: -1rem;
-    width: 50vw;
-    height: 25vh;
 
+.logo{
+    width: 15%;
+    margin-right: 5rem;
 }
+
 .menu{
     position: relative;
     top: 2rem;
 }
+
 div{
     padding-left: 2rem; 
 }
+
 ul{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    display: inline-flex;
+    gap: 3rem;
+    position: relative;
+    top: -1rem;
 }
+
 ul li a{
     text-decoration: none;
-    color: #f74cf7;
-    font-size: 20px;
+    color: #fc91a3;
+    font-size: 22px;
+    font-weight: 400;
     cursor: pointer;
 }
-.box-open{ 
-    height: 0;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+
+ul li a:hover{
+    color: white;
+    border-bottom: 1px solid white;
+    transition: 1s;
 }
-.box-open.open{
-    height: auto;
-    animation: open 0.5s forwards;
-    opacity: 1;
+
+ul li a:hover{
+    border-bottom: 1px solid white;
+    transition: 2s;
 }
+
+.box-open ul li{ 
+    display: flex;
+}
+
+
 @keyframes open {
     from{
         height: 0;
@@ -56,4 +72,27 @@ ul li a{
         height: 200px;
         opacity: 1;
     }
+}
+
+main{
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(assets/giphy.gif);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    position: fixed;
+    z-index: -1;
+}
+
+main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
 }

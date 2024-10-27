@@ -11,53 +11,47 @@
     font-family: "Poppins", sans-serif;
 }
 
-header{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+body{
+    overflow-x: hidden;
+
 }
 
-.logo{
-    width: 10%;
-    margin-right: 5rem;
-    position: relative;
-    top: -1em;
-}
-
-.menu{
-    position: relative;
-    top: 2rem;
-}
-
-div{
-    padding-left: 2rem; 
-}
-
-ul{
-    display: inline-flex;
-    gap: 3rem;
-    position: relative;
-    top: -1rem;
-}
-
-ul li a{
-    text-decoration: none;
-    color: #fc91a3;
-    font-size: 22px;
-    font-weight: 400;
-    cursor: pointer;
-}
-
-ul li a:hover{
-    color: white;
-    border-bottom:  0.1rem solid white;
-    transition: 1s;
-}
-
-.box-open ul li{ 
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    z-index: 1000;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
+.box-open ul {
+    display: flex;
+    gap: 5rem;
+}
+
+.box-open ul li a {
+    color: #fc91a3;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.box-open ul li a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.open {
+    display: none;
+}
 
 @keyframes open {
     from{
@@ -72,14 +66,12 @@ ul li a:hover{
 }
 
 main{
-    top: 0;
     height: 100vh;
     width: 100vw;
     background-image: url(assets/giphy.gif);
     background-size: cover;
     background-position: center;
     position: relative;
-    position: fixed;
     z-index: -1;
 }
 
@@ -94,12 +86,16 @@ main::before {
     z-index: 1; 
 }
 
+main img.logo {
+    width: 10rem;
+}
+
 .conteudo-home{
-    display: flex;
-    align-items: center;
     position: relative;
     z-index: 2;
-    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    height: 100vh;
 }
 
 .conteudo-home img{
@@ -110,21 +106,23 @@ main::before {
     width: 80%;
     font-size: 1.2rem;
     color: white;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .conteudo-home button{
+    cursor: pointer;
     border-radius: 2rem;
-    padding: 15px;
+    padding: 10px 20px;
     font-size: 1rem;
     background-color: #fc91a3;
     color: white;
-    transition: 1s;
+    transition: 0.3s ease-in-out;
 }
 
 .conteudo-home button:hover{
     background: transparent;
-    border: 2px solid #fc91a3;
+    border: 1px solid #fc91a3;
+    color: #fc91a3;
 }
 .logo2{
     animation: limpa 2s ease-in infinite;

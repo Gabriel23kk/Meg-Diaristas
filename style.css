@@ -112,18 +112,19 @@ main img.logo {
     margin-bottom: 1rem;
 }
 
-main button{
+.button-home{
     cursor: pointer;
     border-radius: 2rem;
     padding: 10px 20px;
     font-size: 1rem;
     background-color: #fc91a3;
     color: white;
-    transition: 0.3s ease-in-out;
+    z-index: 2;
+    
 }
-
-main button:hover{
-    background: transparent;
+.button-home:hover{
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
 }
 
 .logo2{
@@ -213,4 +214,54 @@ aside .serviços-container .serviço-item button:hover{
 aside .serviço-item:hover{
     background-color: #fc91a3;
     transition: .5s ease-in-out;
+}
+.container{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.img-boneca{
+    width: 25%;
+}
+.box-Motivos h3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 0.4em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.container{
+    animation: Flutuar 2s ease-in-out infinite;
+}
+.p-1{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 1.5rem;
+    gap: 1em;
+    color:#c52842;
+    font-weight: 600;
+}
+.p-2{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 1.5rem;
+    gap: 1em;
+    color: #c52842;
+    font-weight: 600;
+}
+@keyframes Flutuar{
+    0%{
+        transform: translateY(1rem);
+    }
+    50%{
+        transform: translateY(2rem);
+    }
+    100%{
+        transform: translateY(1rem);
+    }
 }

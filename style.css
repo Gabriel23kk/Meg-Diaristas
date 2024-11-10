@@ -14,10 +14,16 @@
 
 body{
     overflow-x: hidden;
-    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
     height: 100%;
-    background: linear-gradient(350deg, #fff4fc, #faccf2);
-    background-size: 110vh;
+    background-size: 110%;
+    background-image: url('assets/fundo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 header {
@@ -33,7 +39,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 15px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08); 
 }
 
 .box-open ul {
@@ -42,7 +48,7 @@ header {
 }
 
 .box-open ul li a {
-    color: #fc91a3;
+    color: #e881ac;
     font-size: 18px;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
@@ -76,8 +82,7 @@ main{
     background-size: 100vw;
     background-size: cover;
     background-position: center;
-    position: relative;
-    
+    position: relative;   
 }
 
 main::before {
@@ -92,9 +97,10 @@ main::before {
 }
 
 main img.logo {
-    width: 20rem;
+    width: 11rem;
     position: relative;
-    left: 12rem;
+    left: 20rem;
+    border-radius: 100%;
     top: -3rem;
     animation: pulseLogo 1s ease-in-out infinite;
 }
@@ -110,6 +116,7 @@ main img.logo {
     }
 }
 
+
 .conteudo-home{
     position: relative;
     z-index: 2;
@@ -120,32 +127,13 @@ main img.logo {
     left: 17rem;
 }
 
-.conteudo-home img{
-    width: 25rem;
-}
-
 .conteudo-home p{
     width: 60%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: white;
     margin-bottom: 1rem;
     position: relative;
     top: -3rem;
-}
-
-.button-home{
-    cursor: pointer;
-    border-radius: 2rem;
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #fc91a3;
-    color: white;
-    z-index: 2;
-    
-}
-.button-home:hover{
-    background-color: transparent;
-    transition: 0.3s ease-in-out;
 }
 
 .logo2{
@@ -164,7 +152,6 @@ main img.logo {
     }
 }
 
-
 /* SERVIÇOS */
 
 aside h1{
@@ -175,7 +162,7 @@ aside h1{
 }
 
 span{
-    color: #fc91a3;
+    color: #e881ac;
 }
 
 aside .serviços-container{
@@ -185,11 +172,14 @@ aside .serviços-container{
 }
 
 aside .serviços-container .serviço-item{
-    border: 2px solid #fc91a3;
+    border: 2px solid #e881ac;
     padding: 1.5rem;
     width: 80%;
     margin: 0 auto;
     border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(15px) saturate(150%);
+    backdrop-filter: blur(4px) saturate(150%); 
 }
 
 aside .serviços-container .serviço-item img{
@@ -202,7 +192,7 @@ aside .serviços-container .serviço-item img{
 
 .serviço-item h2{
     font-size: 1rem;
-    color: #c52842;
+    color: #e881ac;
     padding: 1rem 0;
     display: flex;
     justify-content: center;
@@ -217,29 +207,33 @@ aside .serviços-container .serviço-item p{
 }
 
 aside .serviços-container .serviço-item button{
-    background-color: #c52842;
+    background-color: #e881ac;
     color: #fff;
     font-size: 12px;
-    padding: 10px;;
+    padding: 10px;
     border-radius: 2rem;
     display: flex;
     margin: 0 auto;
     margin-top: 2rem;
     cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
 }
 
 
 aside .serviços-container .serviço-item button:hover{
-    opacity: .8;
+    font-size: 14px;
+    padding: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
 }
 .serviço-item{
-    box-shadow: 2px 2px 10px #888888;
+    box-shadow: 5px 5px 40px rgba(136, 136, 136, 1);
 }
 
 aside .serviço-item:hover{
     background-color: #fc91a3;
     transition: .5s ease-in-out;
-    animation: pulse 1s ease-in-out infinite;
+    animation: pulse 5s ease-in-out infinite;
 }
 @keyframes pulse {
     0%{
@@ -262,19 +256,20 @@ aside .serviço-item:hover{
     top: -1.5rem;
     left: 8rem;
     border-bottom: 1px solid #fc91a3;
-     width: 80vw;
-    
+     width: 80vw;   
 }
+
 .img-boneca{
     width: 25%;
 }
+
 .box-Motivos h3{
     display: flex;
     text-align: center;
     justify-content: center;
     gap: 0.4em;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     font-size: 1.6rem;
 }
 
@@ -318,7 +313,7 @@ aside .serviço-item:hover{
     align-items: center;
 }
 h4{
-    margin-top: 2rem;
+    margin-top: 5rem;
     margin-bottom: 2rem;
     font-size: 2rem;
 }
@@ -336,43 +331,59 @@ h4{
 .box-agenda p{
     width: 75%;
 }
+
 h5{
     color: #c52842;
     font-size: 1rem;
 }
+
 .agenda-1, .agenda-2{
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-#Sobre h6{
+
+#sobre h6{
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 6rem;
     font-size: 2rem;
+}
 
-}
-.box-sobre{
-    display: flex;
-}
-.text{
-    background-color: #fc91a3;
+.text {
+    margin-top: -5rem;
+    background-color: rgba(255, 255, 255, 0.3); /* Cor de fundo com opacidade */
+    backdrop-filter: blur(10px); /* Desfoque para efeito de vidro */
     padding: 2rem;
-    width: 65vw;
-    height: 50vh;
     border-radius: 50px;
-    box-shadow: 2px 2px 10px #888888;
+    box-shadow: 5px 5px 40px rgba(136, 136, 136, 1);
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borda para realçar o efeito */
+}
 
-}
 .text p{
-    width: 100%;
-    position: relative;
-    
+    font-size: 1.2rem;
     font-weight: 500;
-    font-size: 0.9em;
 }
-.logo-sobre{
-    position: relative;
-    top: -4rem;
-    animation: pulse 1s ease-in-out infinite;
+
+
+.box-sobre {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 2rem; /* Espaço entre a imagem e o texto */
+    width: 80vw;
+    margin: 0 auto;
+    height: 80vh;
+}
+
+/* Limita a largura da imagem */
+.box-sobre img {
+    margin-top: -5rem;
+    max-width: 320px;
+    border-radius: 60px;
+    box-shadow: 5px 5px 40px rgba(136, 136, 136, 1);
+}
+
+/* Configura o texto */
+.box-sobre .text {
+    width: 50%;
 }

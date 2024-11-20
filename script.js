@@ -1,7 +1,4 @@
-const abrir = document.querySelector(".open")
-
-abrir.addEventListener("click", abra)
-function abra() {
-    const menu = document.querySelector(".box-open");
-    menu.classList.add("open")
+function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("show");  // Alterna a classe "show" para exibir ou esconder o menu
 }

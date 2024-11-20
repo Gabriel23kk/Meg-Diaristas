@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: url(https://i.pinimg.com/originals/0f/ff/ae/0fffae93224ab5852be35a8821656ee3.gif);
+    background-size: 100vw 150vh;
+}
+.title{
+    text-align: center;
+    margin: 1rem 1rem;
+}
+.title h1{
+    color: rgb(49, 8, 87);
+}
+.dica-1{
+    border: 1px solid black;
+    backdrop-filter: blur(16px);
+    display: flex;
+    gap: 1rem;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    animation: flutuar 2s ease-in-out infinite;
+}
+.mancha{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 0.8rem;
+}
+.mancha img{
+    width: 30vw;
+}
+.descrição h2{
+    font-size: 1.5rem;
+    width: 90%;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.descrição p{
+    font-size: 1rem;
+    width: 95%;
+    margin-top: 2rem;
+}
+@keyframes flutuar {
+    0%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(1rem);
+    }
+    100%{
+        transform: translateY(0rem);
+    }
+}
+.dica-2{
+    border: 1px solid black;
+    backdrop-filter: blur(16px);
+    display: flex;
+    gap: 1rem;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    margin-top: 1rem;
+    animation: flutuar 2s ease-in-out infinite;
+}
+.passar{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 0.8rem;
+}
+.passar img{
+    width: 30vw;
+}
+.descrição-2 h2{
+    font-size: 1.5rem;
+    width: 90%;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.descrição-2 p{
+    font-size: 1rem;
+    width: 95%;
+    margin-top: 2rem;
+}
+.dica-3{
+    border: 1px solid black;
+    backdrop-filter: blur(16px);
+    display: flex;
+    gap: 1rem;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    margin-top: 1rem;
+    animation: flutuar 2s ease-in-out infinite;
+}
+.pano-de-prato{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 0.8rem;
+}
+.pano-de-prato img{
+    width: 30vw;
+    height: 35vh;
+}
+.descrição-3 h2{
+    font-size: 1.5rem;
+    width: 90%;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.descrição-3 p{
+    font-size: 1rem;
+    width: 95%;
+    margin-top: 2rem;
+}
+.dica-4{
+    border: 1px solid black;
+    backdrop-filter: blur(16px);
+    display: flex;
+    gap: 1rem;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    margin-top: 1rem;
+    animation: flutuar 2s ease-in-out infinite;
+}
+.banheiro{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 0.8rem;
+}
+.banheiro img{
+    width: 30vw;
+    height: 35vh;
+}
+.descrição-4 h2{
+    font-size: 1.5rem;
+    width: 90%;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.descrição-4 p{
+    font-size: 1rem;
+    width: 95%;
+    margin-top: 2rem;
+}
+.dica-5{
+    border: 1px solid black;
+    backdrop-filter: blur(16px);
+    display: flex;
+    gap: 1rem;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    margin-top: 1rem;
+    animation: flutuar 2s ease-in-out infinite;
+}
+.trabalho{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 0.8rem;
+}
+.trabalho img{
+    width: 30vw;
+    height: 35vh;
+}
+.descrição-5 h2{
+    font-size: 1.5rem;
+    width: 90%;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.descrição-5 p{
+    font-size: 1rem;
+    width: 95%;
+    margin-top: 2rem;
+}
+.dica-6{
+    border: 1px solid black;
+    backdrop-filter: blur(16px);
+    display: flex;
+    gap: 1rem;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    margin-top: 1rem;
+    animation: flutuar 2s ease-in-out infinite;
+}
+.cozinha{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 0.8rem;
+}
+.cozinha img{
+    width: 30vw;
+    height: 35vh;
+}
+.descrição-6 h2{
+    font-size: 1.5rem;
+    width: 90%;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.descrição-6 p{
+    font-size: 1rem;
+    width: 95%;
+    margin-top: 2rem;
+}

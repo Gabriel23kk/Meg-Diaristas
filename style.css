@@ -19,14 +19,10 @@ body{
     right: 0;
     width: 100vw;
     height: 100%;
-<<<<<<< HEAD
     background-size: 100%;
     background: linear-gradient(#f3a7d6, #d1d4f8);
-=======
-    background-size: 110%;
-    background-image: url('assets/fundo.jpg');
+    background-size: 100%;
     background-size: cover;
->>>>>>> 25907e525b24be06a3d9f2ebaac4a96301caead1
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -230,13 +226,14 @@ aside .serviços-container .serviço-item button:hover{
     font-size: 14px;
     padding: 12px;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+    transition: 1s;
 }
 .serviço-item{
     box-shadow: 5px 5px 40px rgba(136, 136, 136, 1);
 }
 
 aside .serviço-item:hover{
-    background-color: #fc91a3;
+    background-color: #fccad2;
     transition: .5s ease-in-out;
     animation: pulse 5s ease-in-out infinite;
 }
@@ -391,7 +388,7 @@ h5{
 /* Configura o texto */
 .box-sobre .text {
     width: 50%;
-<<<<<<< HEAD
+
 }
 ul {
     list-style: none;
@@ -415,6 +412,4 @@ ul li a {
     width: 30px;
     height: 3px;
     background-color: white;
-=======
->>>>>>> 25907e525b24be06a3d9f2ebaac4a96301caead1
 }

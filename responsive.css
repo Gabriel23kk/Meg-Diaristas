@@ -506,7 +506,7 @@
 @media screen and (min-width: 392px) and (max-width: 414px){
     body{
         overflow-x: hidden;
-        height: 780vh;
+        height: 850vh;
         width: 100vw;
     }
     .conteudo-home{
@@ -532,7 +532,7 @@
     }
     .serviços-container{
         position: relative;
-        left: -1.2rem;
+        left: -1.7rem;
     }
     .box-Motivos h3{
         font-size: 0.8rem;   
@@ -593,7 +593,7 @@
     .box-sobre .logo{
         width: 50vw;
         position: relative;
-        left: 0.6rem;
+        
         top: 5rem;
     }
     .sobre{
@@ -602,7 +602,7 @@
     .box-sobre .text {
         position: relative;
         top: 10rem;
-        left: 0.6rem;
+       
         height: 80%;
         width: 100%;
     }

@@ -6,7 +6,7 @@
     }
     .conteudo-home{
         position: relative;
-        left: 0;
+        left: 0rem;
     }
     .home-one{
         position: relative;
@@ -337,10 +337,10 @@
     
     
 }
-@media screen and (min-width: 376px) and (max-width: 390px){
+@media screen and (min-width: 375px) and (max-width: 390px){
     body{
         overflow-x: hidden;
-        height: 850vh;
+        height: 870vh;
         width: 100vw;
     }
     .conteudo-home{
@@ -366,7 +366,7 @@
     }
     .serviços-container{
         position: relative;
-        left: -1.8rem;
+        left: -2.1rem;
     }
     .box-Motivos h3{
         font-size: 0.8rem;   
@@ -375,7 +375,7 @@
         width: 90%;
         height: 25vh;
         position: relative;
-        left: 1.5rem;
+        left: 2rem;
     }
     .img-boneca{
         display: none;
@@ -437,7 +437,7 @@
         position: relative;
         top: 10rem;
         left: 0.6rem;
-        height: 80%;
+        height: 87%;
         width: 100%;
     }
     .text p{
@@ -503,7 +503,7 @@
     
     
 }
-@media screen and (min-width: 392px) and (max-width: 414px){
+@media screen and (min-width: 390px) and (max-width: 414px){
     body{
         overflow-x: hidden;
         height: 850vh;
@@ -669,7 +669,7 @@
     
     
 }
-@media screen and (min-width: 416px) and (max-width: 428px){
+@media screen and (min-width: 414px) and (max-width: 428px){
     body{
         overflow-x: hidden;
         height: 780vh;
@@ -698,7 +698,7 @@
     }
     .serviços-container{
         position: relative;
-        left: -0.5rem;
+        left: -0.8rem;
     }
     .box-Motivos h3{
         font-size: 0.8rem;   

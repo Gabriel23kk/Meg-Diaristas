@@ -231,6 +231,11 @@ aside .serviços-container .serviço-item button:hover{
 .serviço-item{
     box-shadow: 5px 5px 40px rgba(136, 136, 136, 1);
 }
+.serviço-item button a{
+    list-style: none;
+    color: #ffffff;
+    font-size: 12px;
+}
 
 aside .serviço-item:hover{
     background-color: #fccad2;

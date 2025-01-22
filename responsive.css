@@ -835,3 +835,40 @@
     
     
 }
+@media screen and (min-width: 1279px) and (max-width: 1300px) {
+    main{
+        width: 130vw;
+        background-image: url(assets/giphy.gif);
+    } 
+    .home-one{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .home-one img{
+        margin-bottom: 1.5rem;
+        position: relative;
+        margin-left: 3rem;
+    }
+    aside{
+        position: relative;
+        left: 9rem;
+    }
+    .box-Motivos{
+        position: relative;
+        left: 9rem;
+    }
+    .agende{
+        position: relative;
+        left: 9rem;
+        font-size: 1.3rem;
+        width: 110vw;
+    }
+    .titulo{
+        font-size: 1.3rem;
+    }
+    #sobre{
+        position: relative;
+        left: 10rem;
+    }
+}

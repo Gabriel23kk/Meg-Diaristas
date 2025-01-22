@@ -1,0 +1,58 @@
+
+@media screen and (min-width: 359px) and (max-width:370px){
+    body{
+        height: 630vh;
+    }
+    .dica-1, .dica-2, .dica-3, .dica-4, .dica-5, .dica-6 {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .mancha img, .passar img, .pano-de-prato img, .banheiro img, .trabalho img, .cozinha img{
+        width: 98%;
+    }
+    .descrição, .descrição-2, .descrição-3, .descrição-4, .descrição-5, .descrição-6 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+}
+@media screen and (min-width: 372px) and (max-width:392px){
+    body{
+        height: 600vh;
+    }
+    .dica-1, .dica-2, .dica-3, .dica-4, .dica-5, .dica-6 {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .mancha img, .passar img, .pano-de-prato img, .banheiro img, .trabalho img, .cozinha img{
+        width: 98%;
+    }
+    .descrição, .descrição-2, .descrição-3, .descrição-4, .descrição-5, .descrição-6 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+}
+@media screen and (min-width: 413px) and (max-width: 428px){
+    body{
+        height: 540vh;
+    }
+    .dica-1, .dica-2, .dica-3, .dica-4, .dica-5, .dica-6 {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .mancha img, .passar img, .pano-de-prato img, .banheiro img, .trabalho img, .cozinha img{
+        width: 98%;
+    }
+    .descrição, .descrição-2, .descrição-3, .descrição-4, .descrição-5, .descrição-6 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+}
